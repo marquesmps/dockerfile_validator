@@ -1,0 +1,47 @@
+{
+    "name": "dockerfile-validator",
+    "displayName": "dockerfile-validator",
+    "description": "Validates Dockerfiles based on dockerfile_lint: https://github.com/projectatomic/dockerfile_lint",
+    "version": "0.0.1",
+    "author": {
+        "name": "Miguel Marques",
+        "email": "marquesmps@gmail.com"
+    },
+    "publisher": "marquesmps",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "docker",
+        "dockerfile"
+    ],
+    "activationEvents": [
+        "onCommand:extension.dockerfile-validator"
+    ],
+    "main": "./src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.dockerfile-validator",
+                "title": "Dockerfile Validator"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "dockerfile_lint": "^0.3.1"
+    }
+}
