@@ -12,7 +12,7 @@
         "vscode": "^1.21.0"
     },
     "categories": [
-        "Other"
+        "Linters"
     ],
     "keywords": [
         "docker",
@@ -21,6 +21,20 @@
     "activationEvents": [
         "onCommand:extension.dockerfile-validator"
     ],
+    "galleryBanner": {
+        "color": "#8647ae",
+        "theme": "dark"
+    },
+    "icon": "images/dockervalidator-icon.png",
+    "preview": false,
+    "homepage": "https://github.com/marquesmps/dockerfile_validator/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/marquesmps/dockerfile_validator/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/marquesmps/dockerfile_validator"
+    },
     "main": "./src/extension",
     "contributes": {
         "commands": [
