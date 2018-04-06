@@ -19,7 +19,7 @@
         "dockerfile"
     ],
     "activationEvents": [
-        "onCommand:extension.dockerfile-validator"
+        "onLanguage:dockerfile"
     ],
     "galleryBanner": {
         "color": "#8647ae",
@@ -56,6 +56,6 @@
         "@types/mocha": "^2.2.42"
     },
     "dependencies": {
-        "dockerfile_lint": "^0.3.1"
+        "dockerfile_lint": "^0.3.2"
     }
 }
