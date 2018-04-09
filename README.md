@@ -11,7 +11,7 @@ It is an [open-source](https://github.com/marquesmps/dockerfile_validator "Open 
 - [License](#license)
 
 # Validation Rules
-dockerfile_validator uses the default rule files from [dockerfile_lint](https://github.com/projectatomic/dockerfile_lint#extending-and-customizing-rule-files) are used.
+dockerfile_validator uses the default rule files from [dockerfile_lint](https://github.com/projectatomic/dockerfile_lint#extending-and-customizing-rule-files).
 
 More information [here](https://github.com/projectatomic/dockerfile_lint/blob/master/README.md#extending-and-customizing-rule-files).
 
