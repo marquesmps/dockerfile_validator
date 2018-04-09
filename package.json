@@ -2,7 +2,7 @@
     "name": "dockerfile-validator",
     "displayName": "dockerfile-validator",
     "description": "Validates Dockerfiles based on dockerfile_lint: https://github.com/projectatomic/dockerfile_lint",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": {
         "name": "Miguel Marques",
         "email": "marquesmps@gmail.com"
