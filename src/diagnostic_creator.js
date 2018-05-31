@@ -25,7 +25,7 @@ class DiagnosticsCreator{
         var result = [];
         validation.data.forEach(validationLine => {
             var range = (validationLine.line||-1)===-1? new vscode.Range(dockerfile.lineCount,0,dockerfile.lineCount,5): dockerfile.lineAt(validationLine.line-1).range;
-            var diagnostic = new vscode.Diagnostic(range,"[dockerfile-validator] " + validationLine.message + (validationLine.lineContent === "" ? "" : ": \"" + validationLine.lineContent + "\"") + "\n\t" + (Array.isArray(validationLine.reference_url)?validationLine.reference_url.join(""):validationLine.reference_url), this.DockerfileSeverityToDiagnosticsSeverity(severity));
+            var diagnostic = new vscode.Diagnostic(range,"[dockerfile-validator] " + validationLine.message + ((validationLine.lineContent||"") === "" ? "" : ": \"" + validationLine.lineContent + "\"") + "\n\t" + (Array.isArray(validationLine.reference_url)?validationLine.reference_url.join(""):validationLine.reference_url), this.DockerfileSeverityToDiagnosticsSeverity(severity));
             result.push(diagnostic);
         });
         return result;
