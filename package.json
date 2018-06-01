@@ -42,7 +42,17 @@
                 "command": "extension.dockerfile-validator",
                 "title": "Dockerfile Validator"
             }
-        ]
+        ],
+        "configuration":{
+            "title": "dockerfile-validator configuration",
+            "properties": {
+                "dockerfile-validator.rulefile.path":{
+                    "type": "string",
+                    "default": null,
+                    "description": "Specifies a path for a custom validation rule filem. If not set the default is used from https://github.com/projectatomic/dockerfile_lint"
+                }
+            }
+        }
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",

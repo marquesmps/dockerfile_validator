@@ -5,9 +5,9 @@ const DiagnosticsCreator = require('./diagnostic_creator').DiagnosticsCreator;
 
 class DockerfileValidator extends vscode.Disposable { 
 
-    constructor(window, workspace, subscriptions){
+    constructor(window, workspace, rulefilePath, subscriptions){
         super(() => this.dispose());
-
+        this.rulefilePath = rulefilePath;
         var disposables = [];
         this.window = window;
         this.diagnosticsCollection = vscode.languages.createDiagnosticCollection();
@@ -29,7 +29,10 @@ class DockerfileValidator extends vscode.Disposable {
     }
 
     validate(dockerfileContents){
-        var validator = new DockerFileValidator();
+        try {
+            var validator = new DockerFileValidator(this.rulefilePath);
+        } catch (error) {
+        }
         var result = validator.validate(dockerfileContents);
         return result;
     }
