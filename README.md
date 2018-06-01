@@ -11,9 +11,11 @@ It is an [open-source](https://github.com/marquesmps/dockerfile_validator "Open 
 - [License](#license)
 
 # Validation Rules
-dockerfile_validator uses the default rule files from [dockerfile_lint](https://github.com/projectatomic/dockerfile_lint#extending-and-customizing-rule-files).
+dockerfile_validator uses [this](https://github.com/marquesmps/dockerfile_validator/tree/develop/src/rule_files/default_rules.yaml) default rule file.
 
-More information [here](https://github.com/projectatomic/dockerfile_lint/blob/master/README.md#extending-and-customizing-rule-files).
+Custom rule files can be provided by editing the User Setting **"dockerfile-validator.rulefile.path"** in VS Code. The value for that configuration should contain the path to the yaml rule file, if the file does not exist, or if it is invalid, it will use the [default rule file] (https://github.com/marquesmps/dockerfile_validator/tree/develop/src/rule_files/default_rules.yaml).
+
+>Information on how to customize rule files [here](https://github.com/projectatomic/dockerfile_lint/blob/master/README.md#extending-and-customizing-rule-files).
 
 # Preview
 
