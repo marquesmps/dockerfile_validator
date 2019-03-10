@@ -7,3 +7,9 @@ All notable changes to the "dockerfile-validator" extension will be documented i
 - Allow users to choose the rules file by setting "dockerfile-validator.rulefile.path". If none is set, or. fie does not exist or is invalid, the default rules file is used.
 - Ugrade dependency packages. Security issues fixed:
     -[CVE-2018-3728] (https://nvd.nist.gov/vuln/detail/CVE-2018-3728)
+
+## [1.1.0]
+- Ugrade dependency packages. Security issues fixed:
+    -[CVE-2018-16487] (https://nvd.nist.gov/vuln/detail/CVE-2018-16487)
+    -[CVE-2018-16492] (https://nvd.nist.gov/vuln/detail/CVE-2018-16492)
+    -[CVE-2018-16491] (https://nvd.nist.gov/vuln/detail/CVE-2018-16491)
