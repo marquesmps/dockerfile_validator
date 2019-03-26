@@ -1,4 +1,4 @@
-# dockerfile_validator (v1.0.0)
+# dockerfile_validator (v1.2.0)
 
 A rule based 'linter' for Dockerfiles. The linter rules can be used to check file syntax as well as arbitrary semantic and best practice attributes determined by the rule file writer. The linter can also be used to check LABEL rules against docker images.
 It is an [open-source](https://github.com/marquesmps/dockerfile_validator "Open dockerfile_validator on GitHub") extension for [Visual Studio Code](https://code.visualstudio.com), based on [dockerfile_lint](https://github.com/projectatomic/dockerfile_lint)
